@@ -35,9 +35,9 @@ class MovieDatabase
     public function fetchUpdate($id)
     {
         if (!empty($id)) {
-            $params = null;
+            $params = array(":id" => $id);
             $SQL = "SELECT films.NR, films.TITEL, films.GENRE, films.JAAR, films.TIJDSDUUR, regisseurs.ACHTERNAAM, regisseurs.VOORNAAM
-FROM films,regisseurs WHERE films.NR = $id AND films.DIRNR = regisseurs.NR;";
+FROM films,regisseurs WHERE films.NR = :id AND films.DIRNR = regisseurs.NR;";
             $DBQuery = $this->db->Select($SQL, $params);
             $result = null;
             if (count($DBQuery) > 0)

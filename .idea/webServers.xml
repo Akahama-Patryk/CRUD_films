@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="b7a6a832-b3b9-4003-a7eb-9899e85dab01" name="localhost" url="http://localhost/Projects 2019/wigmans/film_CRUD">
+        <fileTransfer port="0" mountedRoot="C:\xampp\htdocs\Projects 2019\wigmans\film_CRUD" accessType="MOUNT" />
+      </webServer>
+    </option>
+  </component>
+</project>
