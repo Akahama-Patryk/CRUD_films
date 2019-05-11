@@ -17,7 +17,7 @@ $sent->formInsert($_POST['movie'],$_POST['director'],$_POST['year'],$_POST['genr
 <body>
 <ul class="nav nav-pills nav-fill rounded-0">
     <li class="nav-item">
-        <a class="nav-link" href="READ.php">READ MovieDatabase</a>
+        <a class="nav-link" href="index_READ.php">READ MovieDatabase</a>
     </li>
     <li class="nav-item">
         <a class="nav-link active" href="CREATE.php">CREATE MovieDatabase</a>

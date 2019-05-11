@@ -1,4 +1,5 @@
 <?php
+include_once("class/RedirectHandler.php");
 
 class MovieDatabase
 {
@@ -79,10 +80,10 @@ FROM films,regisseurs WHERE films.NR = :id AND films.DIRNR = regisseurs.NR;";
             $params = array(":filmid" => $delID);
             $SQL = "DELETE FROM films WHERE NR = :filmid;";
             $DBQuery = $this->db->Delete($SQL, $params);
-            header("Location: READ.php");
+            RedirectHandler::HTTP_301('index_READ.php');
             echo "Movie has been DELETED!!!";
         } else {
-            header("Location: READ.php");
+            RedirectHandler::HTTP_301('index_READ.php');
             echo "There is nothing to DELETE.";
         }
     }
